@@ -1,0 +1,190 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PUCE                ICON    DISCARDABLE     "CPucePuce.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 307, 289
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CPucePuce"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Lire",IDOK,250,131,50,14
+    PUSHBUTTON      "Quitter",IDCANCEL,250,152,50,14
+    GROUPBOX        "Liaisons LPT <-> Carte à puce",IDC_STATIC,7,7,293,113
+    LTEXT           "Détection d'insertion :",IDC_STATIC,143,22,69,8,
+                    WS_DISABLED
+    COMBOBOX        IDC_DETEC_COMBO,218,20,60,185,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Vcc :",IDC_STATIC,120,46,18,8
+    COMBOBOX        IDC_VCC_COMBO,141,44,60,185,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "R/W :",IDC_STATIC,22,62,21,8,WS_DISABLED
+    COMBOBOX        IDC_RW_COMBO,52,60,60,185,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Horloge :",IDC_STATIC,22,81,30,8
+    COMBOBOX        IDC_CLK_COMBO,52,79,60,185,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Reset/Up :",IDC_STATIC,37,99,36,8
+    COMBOBOX        IDC_RESET_COMBO,75,97,60,185,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           ": Vpp",IDC_STATIC,265,62,18,8
+    COMBOBOX        IDC_VPP_COMBO,197,60,60,185,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           ": E/S",IDC_STATIC,265,81,18,8
+    COMBOBOX        IDC_ES_COMBO,197,79,60,185,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,111,
+                    58,85,39
+    GROUPBOX        "Informations",IDC_STATIC,7,127,229,40
+    LTEXT           "Version:",IDC_STATIC,27,145,25,8
+    EDITTEXT        IDC_VERSION_EDIT,58,143,22,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Il reste",IDC_STATIC,109,145,22,8
+    EDITTEXT        IDC_RESTE_EDIT,135,143,17,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "unitées sur",IDC_STATIC,156,145,35,8
+    EDITTEXT        IDC_TOTAL_EDIT,195,143,17,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "Données brutes",IDC_STATIC,7,174,293,97
+    EDITTEXT        IDC_DATA_EDIT,17,191,274,71,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    CTEXT           "par Werner BEROUX  -  www.alc-wbc.com  -  wbc@alc-wbc.com",
+                    IDC_STATIC,7,274,293,8,SS_CENTERIMAGE
+    LTEXT           "LPT :",IDC_STATIC,22,22,18,8
+    COMBOBOX        IDC_LPT_COMBO,52,20,48,185,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MAIN DLGINIT
+BEGIN
+    IDC_LPT_COMBO, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PUCE                BITMAP  DISCARDABLE     "puce.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "CPucePuce"
+    IDC_CPUCEPUCE           "CPUCEPUCE"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
